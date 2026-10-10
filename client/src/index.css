@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #120F1A;
+  --color-surface: #1B1626;
+  --color-surface-raised: #261F35;
+  --color-line: #352B49;
+  --color-text: #F2EEF8;
+  --color-text-muted: #A296B5;
+  --color-brand: #9D84FF;
+  --color-sos: #FF4D5E;
+  --color-safe: #36D6AA;
+  --color-warn: #FFB547;
+
+  --font-sora: "Sora", system-ui, sans-serif;
+  --font-manrope: "Manrope", system-ui, sans-serif;
+
+  --radius-DEFAULT: 12px;
+  --radius-card: 20px;
+  --radius-sheet: 28px;
+  --radius-full: 9999px;
+
+  /* We keep standard spacing or override spacing if needed. Standard spacing is a 4px grid anyway */
+}
+
+/* Base styles and defaults */
+:root {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-manrope);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent bounce on mobile */
+  overscroll-behavior: contain;
+}
+
+body {
+  margin: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* Fallback for 100dvh on older browsers */
+.min-h-dvh {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.h-dvh {
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Form inputs font size fix for iOS Safari */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-raised);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-line);
+}

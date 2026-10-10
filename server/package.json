@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@mapbox/polyline": "^1.2.1",
+    "@turf/distance": "^7.4.0",
+    "@turf/helpers": "^7.4.0",
+    "@turf/point-to-line-distance": "^7.4.0",
+    "axios": "^1.20.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "geolib": "^4.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb-memory-server": "^11.3.0",
+    "mongoose": "^9.11.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemailer": "^10.0.16",
+    "socket.io": "^4.8.4"
+  }
+}

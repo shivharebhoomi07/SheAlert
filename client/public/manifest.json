@@ -1,0 +1,17 @@
+{
+  "name": "SheAlert",
+  "short_name": "SheAlert",
+  "description": "Personal safety tracking app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#120F1A",
+  "theme_color": "#120F1A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
